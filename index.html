@@ -10,7 +10,7 @@
 
 <body>
   <div class="container">
-    <div class="sidebar">
+    <div class="sidebar pd">
       <div class="logo">
         <img src="./assets/view-dashboard.svg" alt="" width="50" height="50">
         <h3>Dashboard</h3>
@@ -55,13 +55,30 @@
       </div>
 
     </div>
-    <div class="header">
-      <div class="search"></div>
-      <div class="avatar"></div>
-      <div class="account"></div>
-      <div class="action"></div>
+    <div class="header pd">
+      <div class="search">
+
+        <img src="./assets/magnify.svg" alt="" width="30" height="30">
+        <input type="text">
+
+      </div>
+      <div class="avatar">
+        <img src="./assets/bell-ring-outline.svg" alt="" width="30" height="30">
+        <div class="avatar_small" style="width: 50px; height: 50px;"></div>
+        <span>Account Name</span>
+      </div>
+      <div class="account">
+        <div class="avatar_small" style="width: 70px; height: 70px;"></div>
+        <div class="account_name">
+          <p>Hi there</p>
+          <p>Your Account Name</p>
+        </div>
+      </div>
+      <div class="action">
+        <button class="btn">New</button><button class="btn">Upload</button><button class="btn">Share</button>
+      </div>
     </div>
-    <div class="main">
+    <div class="main pd">
       <div class="projects"></div>
       <div class="announcements"></div>
     </div>
