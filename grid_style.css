@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}
 .container{
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -33,15 +38,48 @@
 
 .container .sidebar .logo {
   grid-row: 1/2;
+  align-items:center;
+
+  display: flex;
+  justify-content: start;
+  gap: 10px;
 }
+
+
+.container .sidebar .logo h3 {
+  font-size: 30px;
+}
+
 
 .container .sidebar .tabs{
   grid-row: 2/6 ;
 }
 
+
 .container .sidebar .settings{
   grid-row: 6/9;
+} 
+
+
+/* commonstyle in "tab" and "setting" section */
+.item{
+  font: large bold;
+  display: flex;
+  justify-content: start;
+  gap: 5px;
+  align-items: start;
 }
+
+.item img {
+  width: 30px;
+  height: 30px;
+}
+
+.item a {
+  display: inline-block;
+  line-height: 30px;
+}
+
 
 
 
@@ -89,4 +127,5 @@
   grid-row: 1/4;
   grid-column: 3/4;
 }
+
 
